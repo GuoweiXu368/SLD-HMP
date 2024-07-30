@@ -1,6 +1,14 @@
 # "Learning Semantic Latent Directions for Accurate and Controllable Human Motion Prediction" (ECCV 2024)
-
+<img src="image/intro.png" width="100%"/>
 ---
+This repo contains the official implementation of the paper:
+
+Learning Semantic Latent Directions for Accurate and Controllable Human Motion Prediction
+
+Guowei Xu*, Jiale Tao*, Wen Li^{\dagger}, Lixin Duan
+
+ECCV 2024
+[[arxiv](https://arxiv.org/abs/2407.11494)]
 ### Dependencies
 * Python >= 3.8
 * [PyTorch](https://pytorch.org) >= 1.9
@@ -38,3 +46,19 @@ python main.py --cfg [h36m/humaneva]
  ### Acknowledgments
  
  This code is based on the implementations of [STARS](https://github.com/Sirui-Xu/STARS).
+
+ ## Citation
+If you find this work useful in your research, please cite:
+
+```bibtex
+@article{xu2024learning,
+  title={Learning Semantic Latent Directions for Accurate and Controllable Human Motion Prediction},
+  author={Xu, Guowei and Tao, Jiale and Li, Wen and Duan, Lixin},
+  journal={arXiv preprint arXiv:2407.11494},
+  year={2024}
+}
+```
+
+## License
+
+This repo is distributed under an [MIT LICENSE](LICENSE)
