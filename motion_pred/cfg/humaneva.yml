@@ -1,0 +1,21 @@
+dataset: humaneva
+nz: 128
+t_his: 15
+t_pred: 60
+dropout: 0.1
+nk: 50
+nk1: 5
+nk2: 10
+lambdas: [ 0, 50.0, 0, 16, 8.0, 4.0, 0.002, 10, 10]
+specs:
+  num_flow_layer: 1
+  n_pre: 16
+  multimodal_path: ./data/humaneva_multi_modal/t_his15_1_thre0.500_t_pred60_thre0.010_index_filterd.npz
+  data_candi_path: ./data/humaneva_multi_modal/data_candi_t_his15_t_pred60_skiprate15.npz
+
+lr: 1.e-3
+batch_size: 16
+num_epoch: 500
+num_epoch_fix: 100
+num_data_sample: 2000
+normalize_data: False

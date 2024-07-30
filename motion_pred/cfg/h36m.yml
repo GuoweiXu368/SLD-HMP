@@ -1,0 +1,21 @@
+dataset: h36m
+nz: 128
+t_his: 25
+t_pred: 100
+dropout: 0.1
+nk: 50
+nk1: 5
+nk2: 10
+lambdas: [ 0, 500.0, 0, 64, 2.0, 1.0, 0.01, 50, 100]
+specs:
+  num_flow_layer: 1
+  n_pre: 20
+  multimodal_path: ./data/data_multi_modal/t_his25_1_thre0.500_t_pred100_thre0.100_filtered_dlow.npz
+  data_candi_path: ./data/data_multi_modal/data_candi_t_his25_t_pred100_skiprate20.npz
+
+lr: 1.e-3
+batch_size: 16
+num_epoch: 500
+num_epoch_fix: 100
+num_data_sample: 5000
+normalize_data: False
