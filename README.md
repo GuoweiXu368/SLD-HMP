@@ -1,4 +1,5 @@
-# "Learning Semantic Latent Directions for Accurate and Controllable Human Motion Prediction" (ECCV 2024)
+# "Learning Semantic Latent Directions for Accurate and Controllable Human Motion Prediction" (**ECCV 2024**)
+
 <img src="images/intro.png" width="100%"/>
 
 ---
