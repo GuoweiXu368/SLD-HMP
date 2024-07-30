@@ -1,5 +1,5 @@
 # "Learning Semantic Latent Directions for Accurate and Controllable Human Motion Prediction" (ECCV 2024)
-<img src="image/intro.png" width="100%"/>
+<img src="images/intro.png" width="100%"/>
 ---
 This repo contains the official implementation of the paper:
 
