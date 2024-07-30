@@ -1,4 +1,4 @@
-# Diverse Human Motion Forecasting
+# "Learning Semantic Latent Directions for Accurate and Controllable Human Motion Prediction"(ECCV 2024)
 
 ---
 ### Dependencies
