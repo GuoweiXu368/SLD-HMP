@@ -7,7 +7,7 @@ This repo contains the official implementation of the paper:
 
 Learning Semantic Latent Directions for Accurate and Controllable Human Motion Prediction
 
-Guowei Xu*, Jiale Tao*, Wen Li, Lixin Duan
+Guowei Xu*, Jiale Tao*, Wen Li&#x271F, Lixin Duan
 
 ECCV 2024
 [[arxiv](https://arxiv.org/abs/2407.11494)]
