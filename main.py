@@ -87,7 +87,7 @@ def angle_loss(y):
 
 def loss_function(traj_est, traj, traj_multimodal, prior_lkh, prior_logdetjac, _lambda):
     lambdas = cfg.lambdas 
-    nj = dataset.traj_dim // 3  #nj是关节数量
+    nj = dataset.traj_dim // 3 
 
     Y_g = traj_est.view(traj_est.shape[0], traj.shape[1], traj_est.shape[1]//traj.shape[1], -1)[t_his:] # T B M V
     Y = traj[t_his:]
@@ -104,7 +104,7 @@ def loss_function(traj_est, traj, traj_multimodal, prior_lkh, prior_logdetjac, _
     tmp = traj_est.reshape([-1, cfg.batch_size, cfg.nk, nj, 3])
     pest = torch.zeros([tmp.shape[0], cfg.batch_size, cfg.nk, nj + 1, 3], dtype=dtype, device=device)
     pest[:, :, :, 1:] = tmp
-    limbest = torch.norm(pest[:, :, :, 1:] - pest[:, :, :, parent[1:]], dim=4)#没懂这个是干啥的
+    limbest = torch.norm(pest[:, :, :, 1:] - pest[:, :, :, parent[1:]], dim=4)
     loss_limb = torch.mean((limbgt - limbest).pow(2).sum(dim=3))
 
     # angle loss
