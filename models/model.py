@@ -434,7 +434,7 @@ class Direction(nn.Module):
         self.weight = nn.Parameter(torch.randn(256, motion_dim))
 
     def forward(self, input):
-        # input: (bs*t) x 512
+        # input: (bs*t) x 256
 
         weight = self.weight + 1e-8
         Q, R = torch.qr(weight)  # get eignvector, orthogonal [n1, n2, n3, n4]
