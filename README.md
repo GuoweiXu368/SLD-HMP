@@ -28,19 +28,19 @@ We adapt the data preprocessing from [GSPS](https://github.com/wei-mao-2019/gsps
 ### Train
 We have used the following commands for training the network on Human3.6M or HumanEva-I with skeleton representation:
 ```bash
-python train_nf.py --cfg [h36m/humaneva]
-python main.py --cfg [h36m/humaneva]
+python train_nf.py --cfg [h36m/humaneva] --gpu_index 0
+python main.py --cfg [h36m/humaneva] --gpu_index 0
 ```
  ### Test
  To test on the pretrained model, we have used the following commands:
   ```bash
- python main.py --cfg [h36m/humaneva] --mode test --iter 500
+ python main.py --cfg [h36m/humaneva] --mode test --iter 500 --gpu_index 0
   ```
  ### Visualization
  For visualizing from a pretrained model, we have used the following commands:
 
    ```bash
- python main.py --cfg [h36m/humaneva] --mode viz --iter 500
+ python main.py --cfg [h36m/humaneva] --mode viz --iter 500 --gpu_index 0
   ```
 
  ### Acknowledgments
